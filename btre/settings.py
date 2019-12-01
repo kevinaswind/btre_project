@@ -26,7 +26,7 @@ SECRET_KEY = '1!11%k)dhgh^(hdvu(=2o2i_x#m$p)d#it1apvfro9y=q54izo'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.31.9', '127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -141,13 +141,6 @@ MEDIA_URL = '/media/'
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
-
-# Email settings
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 465
-EMAIL_HOST_USER = 'jiangyuhan730@gmail.com'
-EMAIL_HOST_PASSWORD = 'Fqxtzuwlxqsnrsnl'
-EMAIL_USE_SSL = True
 
 try:
     from .local_settings import *
