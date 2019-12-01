@@ -26,7 +26,7 @@ SECRET_KEY = '1!11%k)dhgh^(hdvu(=2o2i_x#m$p)d#it1apvfro9y=q54izo'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.31.9', '127.0.0.1']
 
 
 # Application definition
@@ -148,3 +148,8 @@ EMAIL_PORT = 465
 EMAIL_HOST_USER = 'jiangyuhan730@gmail.com'
 EMAIL_HOST_PASSWORD = 'Fqxtzuwlxqsnrsnl'
 EMAIL_USE_SSL = True
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
