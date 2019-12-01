@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
+    'contacts.apps.ContactsConfig',
     'listings.apps.ListingsConfig',
     'pages.apps.PagesConfig',
     'realtors.apps.RealtorsConfig',
@@ -140,3 +141,10 @@ MEDIA_URL = '/media/'
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
+
+# Email settings
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'jiangyuhan730@gmail.com'
+EMAIL_HOST_PASSWORD = 'Fqxtzuwlxqsnrsnl'
+EMAIL_USE_SSL = True
